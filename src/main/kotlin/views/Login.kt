@@ -29,6 +29,7 @@ class Login(private val onLoggedIn: () -> Unit = {}) {
         ) {
             val (username, setUsername) = remember { mutableStateOf("") }
             val (password, setPassword) = remember { mutableStateOf("") }
+            val (hostUrl, setHostUrl) = remember { mutableStateOf("jdbc:mariadb://localhost:3306") }
 
             OutlinedTextField(
                 modifier = Modifier.moveFocusOnTab(),
@@ -43,10 +44,17 @@ class Login(private val onLoggedIn: () -> Unit = {}) {
                 label = { Text("Password") },
                 visualTransformation = PasswordVisualTransformation(),
             )
+            Spacer(modifier = Modifier.height(8.dp))
+            OutlinedTextField(
+                modifier = Modifier.moveFocusOnTab(),
+                value = hostUrl,
+                onValueChange = { setHostUrl(it) },
+                label = { Text("Host Url") },
+            )
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {
                 try {
-                    DatabaseConnection.connect(username, password)
+                    DatabaseConnection.connect(username, password, hostUrl)
                     onLoggedIn()
                 } catch (e: Exception) {
                     println("Error during connection: ${e.message}")

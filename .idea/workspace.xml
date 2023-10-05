@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c5070fe-e8f6-4885-971b-347b1653465e" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DatabaseConnection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DatabaseConnection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/views/Login.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +70,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="" />
@@ -96,7 +97,7 @@
       <command value="gradle buildDependents" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.database-ui [init]">
+  <component name="RunManager" selected="Gradle.desktop">
     <configuration name="database-ui [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,7 +120,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="database-ui [buildKotlinToolingMetadata]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="database-ui [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,7 +131,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildKotlinToolingMetadata" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,7 +164,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="database-ui [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="database-ui [packageMsi]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +175,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="packageMsi" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +186,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="database-ui [kotlinSourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="database-ui [packageUberJarForCurrentOS]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -196,7 +197,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="kotlinSourcesJar" />
+            <option value="packageUberJarForCurrentOS" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.database-ui [packageUberJarForCurrentOS]" />
+        <item itemvalue="Gradle.database-ui [packageMsi]" />
+        <item itemvalue="Gradle.database-ui [clean]" />
         <item itemvalue="Gradle.database-ui [init]" />
         <item itemvalue="Gradle.database-ui [buildDependents]" />
-        <item itemvalue="Gradle.database-ui [buildKotlinToolingMetadata]" />
-        <item itemvalue="Gradle.database-ui [kotlinSourcesJar]" />
-        <item itemvalue="Gradle.database-ui [jar]" />
       </list>
     </recent_temporary>
   </component>

@@ -13,8 +13,8 @@ object DatabaseConnection {
     private var connection: Connection? = null
     private var ctx: DSLContext? = null
 
-    fun connect(username: String, password: String) {
-        connection = DriverManager.getConnection(url, username, password)
+    fun connect(username: String, password: String, hostUrl: String) {
+        connection = DriverManager.getConnection(hostUrl, username, password)
         ctx = DSL.using(connection, SQLDialect.MARIADB)
     }
 
