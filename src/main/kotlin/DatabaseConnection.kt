@@ -9,7 +9,6 @@ import java.sql.DriverManager
 
 object DatabaseConnection {
 
-    private var url: String = "jdbc:mariadb://localhost:3306"
     private var connection: Connection? = null
     private var ctx: DSLContext? = null
 
